@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<!--add title-->
+	<!--link to css-->
+  </head>
+  <body>
+	<h1 id="title">freeCodeCamp Survey</h1>
+	<p id="description">Thank you very much for participating in our survey!</p>
+	<form id ="survey-form">
+		<fieldset>
+		<!--personal info
+		name
+		email
+		age
+		role
+		-->
+			<label 
+			id="name-label"
+			for="name"
+			>
+			Name
+				<input 
+				id="name" 
+				name="name"
+				type="teemailt" 
+				placeholder="Enter your name"
+				required
+				>
+			</label>
+			<label 
+			id="email-label"
+			for="email"
+			>
+			Email
+				<input 
+				id="email"
+				name="email"
+				type="email" 
+				placeholder="Enter your email"
+				required
+				>
+			</label>
+			<label 
+			id="number-label"
+			for="age"
+			>
+			Age (optional)
+				<input 
+				id="number" 
+				name="age"
+				type="number" 
+				placeholder="Enter your age"
+				pattern= "[0-9]"
+				min="2"
+				max="200"
+				>
+			</label>
+			</label>
+			<label 
+			id="job-label"
+			for="dropdown"
+			>
+				Employment Status
+			<select
+				id="dropdown"
+				name="job"
+			>
+				<option value="">
+					Please select
+				</option>
+				<option value="student">
+					Student
+				</option>
+				<option value="full">
+					Full Time Job
+				</option>
+				<option value="part">
+					Part Time Job
+				</option>
+				<option value="learn">
+					Full Time Learner
+				</option>
+				<option value="other">
+					Other
+				</option>
+			</select>
+		</fieldset>
+		<hr>
+		<section>
+			<fieldset>
+			<!--survey questions-->
+				<legend>
+					Would you recommend freeCodeCamp to someone learning to code?
+				</legend>
+				<input
+				type="radio"
+				name="recommended"
+				value="0"
+				>
+				Yes!
+				<input
+				type="radio"
+				name="recommended"
+				value="1"
+				>
+				Maybe/ not sure
+				<input
+				type="radio"
+				name="recommended"
+				value="2"
+				>
+				No
+			</fieldset>
+			<fieldset>
+				<legend>
+					Where do you usually freeCodeCamp?
+				</legend>
+			<label>	Home
+				<input 
+				value="0" 
+				type="checkbox"
+				required
+				>
+			</label>
+			<label>	Office
+				<input 
+				value="1" 
+				type="checkbox"
+				required
+				>
+			</label>
+			<label>	Caffee
+				<input 
+				value="3" 
+				type="checkbox"
+				required
+				>
+			</label>
+			<label>	Caffee
+				<input 
+				value="4" 
+				type="checkbox"
+				required
+				>
+			</label>
+			<label>	Other
+				<input 
+				value="5" 
+				type="checkbox"
+				required
+				>
+			</label>
+			</fieldset>
+			<textarea 
+				placeholder="Is there anything you'd like to share with us?"
+			>
+				Comments or Suggestions
+			</textarea>
+		</section>
+		<!-- submit button at bottom -->
+		<input 
+		id="submit"
+		type="submit"
+		value="Submit"
+		>
+	<form>
+  </body>
+</html>
