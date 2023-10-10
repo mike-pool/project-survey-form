@@ -1,0 +1,104 @@
+body {
+	background-color: rgb(27,27,50);
+	color: rgb(245,246,247);
+	font-family: Lato, sans-serif;
+}
+
+#freecodecamp-logo {
+	display: block;
+	width: 20vw;
+	height: auto;
+	max-height: 200px;
+	max-width: 200px;
+	margin: 0 auto;
+	border-radius: 10%; /*rounds corners*/
+}
+
+h1 {
+	text-align: center;
+	display: block;
+	font-family: Hack-ZeroSlash, sans-serif;
+}
+
+#description {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+hr {
+	height: 3px;
+	width: 80vw;
+	background-color: white;
+	border: none;
+	border-radius: 4px;
+	margin: 0 auto 10px auto;
+}
+
+label {
+	display: block;
+	margin: 0 auto;
+}
+
+input {
+	display: inline-block;
+}
+
+fieldset {
+	border: none;
+	width: 65vw;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 10px 0 0 0; /*browser adds padding by default*/
+}
+
+legend {
+	text-align: left;
+}
+
+.personal-info {
+	margin: 0 auto 8px auto; /*want even spacing above and below second hr*/
+	padding-top: 5px; /*easier than targeting hr margins individually*/
+}
+
+.personal-info label {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	margin-left: 30px;
+	margin-bottom: 7px;
+}
+
+.personal-info input {
+	display: inline-block;
+}
+
+.recommend {
+	margin-bottom: 10px;
+}
+
+.recommend label, .location label {
+	margin-left: 25px;
+}
+
+.location {
+	margin-bottom: 15px;
+}
+
+textarea {
+	display: block; /*some browsers default to inline-block*/
+	margin: 0 auto 20px auto;
+	text-align: left;
+	width: 70vw;
+	max-width: 700px;
+}
+
+button {
+	display: block; /*some browsers default to inline-block*/
+	margin: 0 auto;
+	width: 20vw;
+	height: 7vh;
+	border-radius: 5px;
+	background-color: hsl(120,70%,60%);
+	border: none;
+	box-shadow: none;
+}

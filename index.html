@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<!--add title-->
-	<!--link to css-->
+	<meta charset="utf-8">
+	<title>freeCodeCamp Survey</title>
+	<link rel="stylesheet" href="styles.css">
   </head>
   <body>
-	<h1 id="title">freeCodeCamp Survey</h1>
-	<p id="description">Thank you very much for participating in our survey!</p>
-	<form id ="survey-form">
-		<fieldset>
+	<div class="freeCodeCamp">
+		<img id="freecodecamp-logo" class="logo" src="https://media-exp1.licdn.com/dms/image/C4E0BAQGLKj3JHcof0w/company-logo_200_200/0/1589990867649?e=2159024400&v=beta&t=V8puy6s_dYMSAsGHDbhTWfKdLkqoQD5NBhIv3kkmJMQ" alt="freeCodCamp logo">
+		<h1 id="title">freeCodeCamp Survey</h1>
+		<p id="description">Thank you very much for participating in our survey!</p>
+	</div>
+	<hr>
+	<form id ="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+		<fieldset class="personal-info">
 		<!--personal info
 		name
 		email
 		age
-		role
+		job
 		-->
-			<label 
-			id="name-label"
-			for="name"
-			>
+			<label id="name-label" for="name">
 			Name
 				<input 
-				id="name" 
-				name="name"
-				type="teemailt" 
-				placeholder="Enter your name"
-				required
+					id="name" 
+					name="name"
+					type="text" 
+					placeholder="Enter your name"
+					required
 				>
 			</label>
-			<label 
-			id="email-label"
-			for="email"
-			>
+			<label id="email-label"	for="email"	>
 			Email
 				<input 
 				id="email"
@@ -65,6 +64,7 @@
 			<select
 				id="dropdown"
 				name="job"
+				required
 			>
 				<option value="">
 					Please select
@@ -88,82 +88,65 @@
 		</fieldset>
 		<hr>
 		<section>
-			<fieldset>
-			<!--survey questions-->
+			<!--survey questions
+				recommend
+				where used
+				open comment
+			-->
+			<fieldset class="recommend">
 				<legend>
 					Would you recommend freeCodeCamp to someone learning to code?
 				</legend>
-				<input
-				type="radio"
-				name="recommended"
-				value="0"
-				>
-				Yes!
-				<input
-				type="radio"
-				name="recommended"
-				value="1"
-				>
-				Maybe/ not sure
-				<input
-				type="radio"
-				name="recommended"
-				value="2"
-				>
-				No
+				<label>
+					<input
+					class="radio-input"
+					type="radio"
+					name="recommended"
+					value="0"
+					>
+					Yes!
+				</label>
+				<label>
+					<input
+					class="radio-input"
+					type="radio"
+					name="recommended"
+					value="1"
+					>
+					Maybe/ not sure
+				</label>
+				<label>
+					<input
+					class="radio-input"
+					type="radio"
+					name="recommended"
+					value="2"
+					>
+					No
+				</label>
 			</fieldset>
-			<fieldset>
+			<fieldset class="location" required>
 				<legend>
-					Where do you usually freeCodeCamp?
+					Where are you most often physically located while working on freeCodeCamp learning modules?
 				</legend>
-			<label>	Home
-				<input 
-				value="0" 
-				type="checkbox"
-				required
-				>
-			</label>
-			<label>	Office
-				<input 
-				value="1" 
-				type="checkbox"
-				required
-				>
-			</label>
-			<label>	Caffee
-				<input 
-				value="3" 
-				type="checkbox"
-				required
-				>
-			</label>
-			<label>	Caffee
-				<input 
-				value="4" 
-				type="checkbox"
-				required
-				>
-			</label>
-			<label>	Other
-				<input 
-				value="5" 
-				type="checkbox"
-				required
-				>
-			</label>
+				<label><input value="0" type="checkbox">Home</label>
+				<label><input value="1" type="checkbox">Office</label>
+				<label><input value="3" type="checkbox">Cafe</label>
+				<label><input value="4" type="checkbox">Library</label>
+				<label><input value="5" type="checkbox">Other</label>
 			</fieldset>
 			<textarea 
 				placeholder="Is there anything you'd like to share with us?"
+				rows="4"
 			>
 				Comments or Suggestions
 			</textarea>
 		</section>
 		<!-- submit button at bottom -->
-		<input 
+		<button 
 		id="submit"
-		type="submit"
 		value="Submit"
-		>
+		>Submit</button>
 	<form>
   </body>
 </html>
